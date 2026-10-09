@@ -73,4 +73,49 @@ svg {
 
 
 
-/*  */
+-------------
+
+main {
+  border: 5px solid black;
+}
+
+
+/* utility classes */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+}
+
+.grid {
+  border: 2px black solid;
+}
+
+.grid > * {
+  display: flex;
+  gap: 5px;
+}
+
+.flex {
+  display: flex;
+}
+
+.even-columns {
+  columns: 2;
+}
+
+.gap-5 {
+  gap: 5px;
+}
+
+button {
+  border-radius: 5px;
+  padding-inline: 12.5px;
+  padding-block: 5px;
+}
+
+input {
+  padding: 0px;
+}

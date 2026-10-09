@@ -1,16 +1,22 @@
-const body = document.querySelector("body");
-const p = document.querySelector("p");
+const degree = document.getElementById("degree");
+const icon = document.getElementById("icon");
+const input = document.getElementById("input");
+const submit = document.getElementById("submit");
 
-const poke = fetch('https://pokeapi.co/api/v2/pokemon/pikachu')
-.then(response => {
+ const arr = fetch('http://www.7timer.info/ENDPOINT')
+ console.log(arr)
+    
+//, {
+//   headers: { Accept: 'application/json' },
+// });
 
-    if(!response.ok) {
-        throw new Error("Could not fetch resource");
-    }
-    return response.json();
-})
-.then(data => {
-    console.log(data)
-    p.textContent = data.name;
-})
-.catch(error => console.error(error));
+// if (!arr.ok) {
+//   throw new Error(`${arr.status} ${arr.statusText}`);
+// }
+
+// const data = arr.json();
+// console.log(data);
+
+// const degreeGotten = 
+
+// degree.textContent = {degreeGotten}
